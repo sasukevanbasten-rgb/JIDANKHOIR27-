@@ -1,0 +1,3018 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>JIDANKHOIR27 — Landing Page Profesional</title>
+
+  <meta
+    name="description"
+    content="JIDANKHOIR27 menyediakan jasa pembuatan landing page profesional untuk UMKM, bisnis online, produk, jasa, affiliate, dan personal brand."
+  />
+
+  <meta name="theme-color" content="#07111f" />
+
+  <style>
+    /* =========================================================
+       JIDANKHOIR27 — PROFESSIONAL LANDING PAGE
+    ========================================================= */
+
+    :root {
+      --bg: #06101d;
+      --bg-2: #091827;
+      --surface: rgba(255,255,255,.055);
+      --surface-strong: #0d1b2d;
+      --text: #f8fafc;
+      --muted: #91a4b8;
+      --line: rgba(255,255,255,.09);
+
+      --primary: #38bdf8;
+      --primary-2: #0ea5e9;
+
+      --green: #22c55e;
+
+      --radius: 22px;
+
+      --shadow:
+        0 20px 70px rgba(0,0,0,.28);
+
+      --container: 1120px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+      color: var(--text);
+      background:
+        radial-gradient(
+          circle at 80% 5%,
+          rgba(14,165,233,.13),
+          transparent 28%
+        ),
+        radial-gradient(
+          circle at 15% 35%,
+          rgba(56,189,248,.08),
+          transparent 25%
+        ),
+        var(--bg);
+
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+
+      background-image:
+        linear-gradient(
+          rgba(255,255,255,.015) 1px,
+          transparent 1px
+        ),
+        linear-gradient(
+          90deg,
+          rgba(255,255,255,.015) 1px,
+          transparent 1px
+        );
+
+      background-size: 45px 45px;
+
+      mask-image: linear-gradient(
+        to bottom,
+        black,
+        transparent 90%
+      );
+
+      z-index: -1;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(
+        calc(100% - 36px),
+        var(--container)
+      );
+
+      margin-inline: auto;
+    }
+
+
+    /* =========================================================
+       HEADER
+    ========================================================= */
+
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+
+      background:
+        rgba(6,16,29,.78);
+
+      border-bottom:
+        1px solid var(--line);
+    }
+
+    .nav {
+      min-height: 76px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 13px;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--primary),
+          var(--primary-2)
+        );
+
+      color: #03111d;
+
+      font-weight: 1000;
+      font-size: 15px;
+
+      box-shadow:
+        0 8px 25px rgba(14,165,233,.2);
+    }
+
+    .brand-text {
+      font-size: 17px;
+      font-weight: 900;
+      letter-spacing: -.3px;
+    }
+
+    .brand-text span {
+      color: var(--primary);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+
+      color: #b8c5d3;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .nav-links a {
+      transition: .2s;
+    }
+
+    .nav-links a:hover {
+      color: white;
+    }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 42px;
+
+      padding:
+        0 16px;
+
+      border-radius: 11px;
+
+      background: var(--primary);
+
+      color: #03111d;
+
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+
+    /* =========================================================
+       HERO
+    ========================================================= */
+
+    .hero {
+      position: relative;
+      padding:
+        95px 0
+        80px;
+    }
+
+    .hero-grid {
+      display: grid;
+
+      grid-template-columns:
+        1.08fr
+        .92fr;
+
+      gap: 65px;
+
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+
+      padding:
+        8px 13px;
+
+      border:
+        1px solid
+        rgba(56,189,248,.25);
+
+      background:
+        rgba(56,189,248,.07);
+
+      border-radius: 999px;
+
+      color: #8fdcff;
+
+      font-size: 12px;
+      font-weight: 900;
+
+      margin-bottom: 23px;
+    }
+
+    .eyebrow-dot {
+      width: 7px;
+      height: 7px;
+
+      border-radius: 50%;
+
+      background: var(--primary);
+
+      box-shadow:
+        0 0 14px var(--primary);
+    }
+
+    .hero h1 {
+      max-width: 780px;
+
+      font-size:
+        clamp(46px, 7vw, 78px);
+
+      line-height: .99;
+
+      letter-spacing: -3.5px;
+
+      margin-bottom: 25px;
+    }
+
+    .hero h1 span {
+      display: inline-block;
+
+      background:
+        linear-gradient(
+          90deg,
+          #7dd3fc,
+          #38bdf8,
+          #bae6fd
+        );
+
+      -webkit-background-clip: text;
+      background-clip: text;
+
+      color: transparent;
+    }
+
+    .hero-description {
+      max-width: 650px;
+
+      color: var(--muted);
+
+      font-size: 18px;
+
+      line-height: 1.75;
+
+      margin-bottom: 32px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+
+      margin-bottom: 34px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 52px;
+
+      padding:
+        0 20px;
+
+      border-radius: 13px;
+
+      font-size: 14px;
+      font-weight: 900;
+
+      transition:
+        transform .2s ease,
+        box-shadow .2s ease,
+        background .2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #03111d;
+
+      box-shadow:
+        0 12px 35px rgba(14,165,233,.18);
+    }
+
+    .btn-primary:hover {
+      background: #67cff8;
+    }
+
+    .btn-outline {
+      border:
+        1px solid var(--line);
+
+      background:
+        rgba(255,255,255,.035);
+
+      color: var(--text);
+    }
+
+    .btn-outline:hover {
+      background:
+        rgba(255,255,255,.07);
+    }
+
+    .trust-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      color: #7e91a6;
+
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .trust-check {
+      color: var(--primary);
+      font-weight: 900;
+    }
+
+
+    /* =========================================================
+       HERO VISUAL
+    ========================================================= */
+
+    .hero-visual {
+      position: relative;
+    }
+
+    .browser {
+      position: relative;
+
+      padding: 10px;
+
+      border:
+        1px solid
+        rgba(255,255,255,.11);
+
+      border-radius: 25px;
+
+      background:
+        rgba(255,255,255,.045);
+
+      box-shadow:
+        0 35px 90px rgba(0,0,0,.38);
+
+      transform:
+        perspective(1200px)
+        rotateY(-5deg)
+        rotateX(2deg);
+    }
+
+    .browser-top {
+      height: 38px;
+
+      display: flex;
+      align-items: center;
+
+      padding:
+        0 13px;
+
+      gap: 6px;
+
+      border-radius:
+        17px
+        17px
+        0
+        0;
+
+      background:
+        rgba(255,255,255,.045);
+    }
+
+    .browser-dot {
+      width: 8px;
+      height: 8px;
+
+      border-radius: 50%;
+
+      background: #64748b;
+    }
+
+    .browser-url {
+      flex: 1;
+
+      height: 22px;
+
+      margin-left: 8px;
+
+      border-radius: 6px;
+
+      background:
+        rgba(255,255,255,.045);
+
+      color: #6f8296;
+
+      font-size: 8px;
+
+      display: flex;
+      align-items: center;
+
+      padding:
+        0 8px;
+    }
+
+    .browser-screen {
+      overflow: hidden;
+
+      border-radius:
+        0
+        0
+        18px
+        18px;
+
+      background: #091523;
+
+      min-height: 440px;
+    }
+
+    .mock-nav {
+      height: 50px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding:
+        0 20px;
+
+      border-bottom:
+        1px solid
+        rgba(255,255,255,.06);
+    }
+
+    .mock-logo {
+      width: 90px;
+      height: 10px;
+
+      border-radius: 20px;
+
+      background: var(--primary);
+    }
+
+    .mock-links {
+      display: flex;
+      gap: 7px;
+    }
+
+    .mock-links span {
+      width: 35px;
+      height: 5px;
+
+      border-radius: 99px;
+
+      background:
+        rgba(255,255,255,.12);
+    }
+
+    .mock-hero {
+      padding: 38px 24px 30px;
+    }
+
+    .mock-small {
+      width: 100px;
+      height: 7px;
+
+      border-radius: 20px;
+
+      background:
+        rgba(56,189,248,.5);
+
+      margin-bottom: 14px;
+    }
+
+    .mock-title {
+      width: 86%;
+      height: 22px;
+
+      border-radius: 5px;
+
+      background: white;
+
+      opacity: .9;
+
+      margin-bottom: 9px;
+    }
+
+    .mock-title.short {
+      width: 60%;
+    }
+
+    .mock-description {
+      width: 76%;
+      height: 7px;
+
+      border-radius: 20px;
+
+      background:
+        rgba(255,255,255,.14);
+
+      margin-top: 13px;
+    }
+
+    .mock-button {
+      width: 120px;
+      height: 34px;
+
+      border-radius: 9px;
+
+      background: var(--primary);
+
+      margin-top: 20px;
+    }
+
+    .mock-cards {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3,1fr);
+
+      gap: 8px;
+
+      padding:
+        0 24px
+        30px;
+    }
+
+    .mock-card {
+      height: 120px;
+
+      border-radius: 12px;
+
+      background:
+        rgba(255,255,255,.05);
+
+      border:
+        1px solid
+        rgba(255,255,255,.06);
+    }
+
+    .floating-stat {
+      position: absolute;
+
+      left: -35px;
+      bottom: 30px;
+
+      padding:
+        14px
+        17px;
+
+      border:
+        1px solid
+        rgba(255,255,255,.1);
+
+      border-radius: 15px;
+
+      background:
+        rgba(8,19,33,.9);
+
+      backdrop-filter:
+        blur(15px);
+
+      box-shadow:
+        0 20px 45px rgba(0,0,0,.3);
+    }
+
+    .floating-stat strong {
+      display: block;
+
+      font-size: 19px;
+
+      margin-bottom: 2px;
+    }
+
+    .floating-stat span {
+      color: var(--muted);
+
+      font-size: 10px;
+    }
+
+
+    /* =========================================================
+       SECTION BASICS
+    ========================================================= */
+
+    .section {
+      padding: 100px 0;
+    }
+
+    .section-heading {
+      max-width: 700px;
+
+      margin-bottom: 46px;
+    }
+
+    .section-heading.center {
+      margin-inline: auto;
+
+      text-align: center;
+    }
+
+    .section-label {
+      display: inline-block;
+
+      color: var(--primary);
+
+      text-transform: uppercase;
+
+      font-size: 11px;
+
+      font-weight: 900;
+
+      letter-spacing: 2.5px;
+
+      margin-bottom: 11px;
+    }
+
+    .section-heading h2 {
+      font-size:
+        clamp(32px, 5vw, 53px);
+
+      line-height: 1.06;
+
+      letter-spacing: -1.8px;
+
+      margin-bottom: 15px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+
+      font-size: 15px;
+
+      line-height: 1.75;
+    }
+
+
+    /* =========================================================
+       SERVICES
+    ========================================================= */
+
+    .services-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3,1fr);
+
+      gap: 17px;
+    }
+
+    .service-card {
+      padding: 27px;
+
+      border:
+        1px solid
+        var(--line);
+
+      border-radius: var(--radius);
+
+      background:
+        linear-gradient(
+          180deg,
+          rgba(255,255,255,.05),
+          rgba(255,255,255,.025)
+        );
+
+      transition:
+        transform .25s ease,
+        border-color .25s ease,
+        background .25s ease;
+    }
+
+    .service-card:hover {
+      transform:
+        translateY(-7px);
+
+      border-color:
+        rgba(56,189,248,.28);
+
+      background:
+        rgba(56,189,248,.055);
+    }
+
+    .service-icon {
+      width: 52px;
+      height: 52px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 15px;
+
+      background:
+        rgba(56,189,248,.09);
+
+      border:
+        1px solid
+        rgba(56,189,248,.12);
+
+      font-size: 22px;
+
+      margin-bottom: 21px;
+    }
+
+    .service-card h3 {
+      font-size: 18px;
+
+      margin-bottom: 9px;
+    }
+
+    .service-card p {
+      color: var(--muted);
+
+      font-size: 13px;
+
+      line-height: 1.75;
+    }
+
+
+    /* =========================================================
+       PORTFOLIO
+    ========================================================= */
+
+    .portfolio-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3,1fr);
+
+      gap: 18px;
+    }
+
+    .portfolio-card {
+      position: relative;
+
+      overflow: hidden;
+
+      min-height: 300px;
+
+      padding: 22px;
+
+      display: flex;
+      align-items: end;
+
+      border-radius: 24px;
+
+      border:
+        1px solid
+        var(--line);
+
+      background:
+        linear-gradient(
+          145deg,
+          #102236,
+          #07111e 75%
+        );
+    }
+
+    .portfolio-card::before {
+      content: "";
+
+      position: absolute;
+
+      width: 190px;
+      height: 190px;
+
+      border-radius: 50%;
+
+      right: -55px;
+      top: -55px;
+
+      background:
+        radial-gradient(
+          circle,
+          rgba(56,189,248,.27),
+          transparent 67%
+        );
+    }
+
+    .portfolio-card::after {
+      content: "";
+
+      position: absolute;
+
+      inset: 30px;
+
+      border-radius: 16px;
+
+      border:
+        1px solid
+        rgba(255,255,255,.07);
+    }
+
+    .portfolio-content {
+      position: relative;
+
+      z-index: 2;
+    }
+
+    .portfolio-tag {
+      display: inline-block;
+
+      padding:
+        6px
+        9px;
+
+      border-radius: 999px;
+
+      background:
+        rgba(56,189,248,.09);
+
+      border:
+        1px solid
+        rgba(56,189,248,.12);
+
+      color: #8fdcff;
+
+      font-size: 10px;
+
+      font-weight: 900;
+
+      margin-bottom: 11px;
+    }
+
+    .portfolio-content h3 {
+      font-size: 22px;
+
+      margin-bottom: 7px;
+    }
+
+    .portfolio-content p {
+      color: #9bacc0;
+
+      font-size: 13px;
+
+      max-width: 270px;
+    }
+
+
+    /* =========================================================
+       PROCESS
+    ========================================================= */
+
+    .process {
+      display: grid;
+
+      grid-template-columns:
+        repeat(4,1fr);
+
+      gap: 15px;
+    }
+
+    .process-card {
+      position: relative;
+
+      padding:
+        24px
+        20px;
+
+      border-radius: 20px;
+
+      background:
+        rgba(255,255,255,.035);
+
+      border:
+        1px solid
+        var(--line);
+    }
+
+    .process-number {
+      width: 38px;
+      height: 38px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 12px;
+
+      color: #03111d;
+
+      background:
+        var(--primary);
+
+      font-size: 12px;
+
+      font-weight: 1000;
+
+      margin-bottom: 18px;
+    }
+
+    .process-card h3 {
+      font-size: 16px;
+
+      margin-bottom: 7px;
+    }
+
+    .process-card p {
+      color: var(--muted);
+
+      font-size: 12px;
+
+      line-height: 1.7;
+    }
+
+
+    /* =========================================================
+       PRICING
+    ========================================================= */
+
+    .pricing-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3,1fr);
+
+      gap: 18px;
+
+      align-items: stretch;
+    }
+
+    .price-card {
+      position: relative;
+
+      padding: 28px;
+
+      border:
+        1px solid
+        var(--line);
+
+      border-radius: 24px;
+
+      background:
+        rgba(255,255,255,.035);
+    }
+
+    .price-card.featured {
+      border-color:
+        rgba(56,189,248,.45);
+
+      background:
+        linear-gradient(
+          180deg,
+          rgba(56,189,248,.09),
+          rgba(255,255,255,.035)
+        );
+
+      box-shadow:
+        0 25px 70px rgba(14,165,233,.09);
+    }
+
+    .popular {
+      position: absolute;
+
+      top: 17px;
+      right: 17px;
+
+      padding:
+        6px
+        10px;
+
+      border-radius: 999px;
+
+      background:
+        var(--primary);
+
+      color: #03111d;
+
+      font-size: 9px;
+
+      font-weight: 1000;
+
+      letter-spacing: .4px;
+    }
+
+    .price-card h3 {
+      font-size: 20px;
+
+      margin-bottom: 10px;
+    }
+
+    .price-card-description {
+      min-height: 42px;
+
+      color: var(--muted);
+
+      font-size: 12px;
+
+      line-height: 1.6;
+    }
+
+    .price {
+      margin:
+        23px
+        0;
+
+      font-size: 35px;
+
+      font-weight: 1000;
+
+      letter-spacing: -1.4px;
+    }
+
+    .price span {
+      color: var(--muted);
+
+      font-size: 11px;
+
+      font-weight: 600;
+
+      letter-spacing: 0;
+    }
+
+    .features {
+      list-style: none;
+
+      margin:
+        0 0
+        25px;
+    }
+
+    .features li {
+      display: flex;
+      gap: 9px;
+
+      color: #b9c5d3;
+
+      font-size: 12px;
+
+      padding: 7px 0;
+    }
+
+    .features li::before {
+      content: "✓";
+
+      color: var(--primary);
+
+      font-weight: 1000;
+    }
+
+    .price-card .btn {
+      width: 100%;
+    }
+
+
+    /* =========================================================
+       WHY US
+    ========================================================= */
+
+    .why-grid {
+      display: grid;
+
+      grid-template-columns:
+        .85fr
+        1.15fr;
+
+      gap: 60px;
+
+      align-items: center;
+    }
+
+    .why-panel {
+      position: relative;
+
+      min-height: 400px;
+
+      display: grid;
+      place-items: center;
+
+      border:
+        1px solid
+        var(--line);
+
+      border-radius: 28px;
+
+      background:
+        radial-gradient(
+          circle at center,
+          rgba(56,189,248,.12),
+          transparent 55%
+        );
+    }
+
+    .why-center {
+      width: 160px;
+      height: 160px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 50%;
+
+      background:
+        linear-gradient(
+          145deg,
+          #102a43,
+          #07131f
+        );
+
+      border:
+        1px solid
+        rgba(56,189,248,.27);
+
+      box-shadow:
+        0 0 80px
+        rgba(56,189,248,.13);
+
+      text-align: center;
+    }
+
+    .why-center strong {
+      display: block;
+
+      font-size: 19px;
+    }
+
+    .why-center span {
+      color: var(--muted);
+
+      font-size: 9px;
+
+      text-transform: uppercase;
+
+      letter-spacing: 1.5px;
+    }
+
+    .why-point {
+      position: absolute;
+
+      padding:
+        11px
+        13px;
+
+      border:
+        1px solid
+        var(--line);
+
+      border-radius: 12px;
+
+      background:
+        rgba(8,19,33,.82);
+
+      backdrop-filter:
+        blur(12px);
+    }
+
+    .why-point strong {
+      display: block;
+
+      font-size: 12px;
+    }
+
+    .why-point span {
+      color: var(--muted);
+
+      font-size: 9px;
+    }
+
+    .why-point.one {
+      top: 48px;
+      left: 28px;
+    }
+
+    .why-point.two {
+      top: 72px;
+      right: 24px;
+    }
+
+    .why-point.three {
+      bottom: 52px;
+      left: 48px;
+    }
+
+    .why-point.four {
+      right: 35px;
+      bottom: 48px;
+    }
+
+    .why-list {
+      display: grid;
+
+      gap: 16px;
+    }
+
+    .why-item {
+      display: grid;
+
+      grid-template-columns:
+        52px
+        1fr;
+
+      gap: 15px;
+
+      padding:
+        18px;
+
+      border:
+        1px solid
+        var(--line);
+
+      border-radius: 18px;
+
+      background:
+        rgba(255,255,255,.03);
+    }
+
+    .why-icon {
+      width: 52px;
+      height: 52px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 15px;
+
+      background:
+        rgba(56,189,248,.08);
+
+      font-size: 19px;
+    }
+
+    .why-item h3 {
+      font-size: 15px;
+
+      margin-bottom: 4px;
+    }
+
+    .why-item p {
+      color: var(--muted);
+
+      font-size: 12px;
+
+      line-height: 1.65;
+    }
+
+
+    /* =========================================================
+       FAQ
+    ========================================================= */
+
+    .faq-wrap {
+      max-width: 800px;
+
+      margin-inline: auto;
+    }
+
+    details {
+      overflow: hidden;
+
+      border:
+        1px solid
+        var(--line);
+
+      border-radius: 16px;
+
+      background:
+        rgba(255,255,255,.03);
+
+      margin-bottom: 11px;
+    }
+
+    summary {
+      cursor: pointer;
+
+      list-style: none;
+
+      padding:
+        19px
+        20px;
+
+      font-size: 14px;
+
+      font-weight: 800;
+
+      position: relative;
+
+      padding-right: 45px;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::after {
+      content: "+";
+
+      position: absolute;
+
+      right: 20px;
+      top: 17px;
+
+      color: var(--primary);
+
+      font-size: 22px;
+
+      font-weight: 500;
+    }
+
+    details[open] summary::after {
+      content: "−";
+    }
+
+    details p {
+      padding:
+        0
+        20px
+        20px;
+
+      color: var(--muted);
+
+      font-size: 13px;
+
+      line-height: 1.75;
+    }
+
+
+    /* =========================================================
+       CTA
+    ========================================================= */
+
+    .cta-section {
+      padding-bottom: 110px;
+    }
+
+    .cta-box {
+      position: relative;
+
+      overflow: hidden;
+
+      padding:
+        65px
+        35px;
+
+      border-radius: 30px;
+
+      border:
+        1px solid
+        rgba(56,189,248,.2);
+
+      background:
+        radial-gradient(
+          circle at 80% 20%,
+          rgba(56,189,248,.16),
+          transparent 28%
+        ),
+        linear-gradient(
+          135deg,
+          rgba(56,189,248,.075),
+          rgba(255,255,255,.025)
+        );
+
+      text-align: center;
+    }
+
+    .cta-box::before {
+      content: "";
+
+      position: absolute;
+
+      width: 260px;
+      height: 260px;
+
+      left: -100px;
+      bottom: -160px;
+
+      border-radius: 50%;
+
+      background:
+        rgba(56,189,248,.11);
+
+      filter: blur(25px);
+
+      pointer-events: none;
+    }
+
+    .cta-box h2 {
+      position: relative;
+
+      max-width: 730px;
+
+      margin-inline: auto;
+
+      font-size:
+        clamp(32px, 5vw, 56px);
+
+      line-height: 1.05;
+
+      letter-spacing: -2px;
+
+      margin-bottom: 14px;
+    }
+
+    .cta-box p {
+      position: relative;
+
+      max-width: 620px;
+
+      margin:
+        0
+        auto
+        26px;
+
+      color: var(--muted);
+
+      font-size: 14px;
+    }
+
+    .cta-box .btn {
+      position: relative;
+    }
+
+
+    /* =========================================================
+       FOOTER
+    ========================================================= */
+
+    footer {
+      border-top:
+        1px solid
+        var(--line);
+
+      padding:
+        35px
+        0;
+    }
+
+    .footer-inner {
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+      gap: 20px;
+    }
+
+    .footer-brand {
+      font-size: 14px;
+
+      font-weight: 900;
+    }
+
+    .footer-brand span {
+      color: var(--primary);
+    }
+
+    .footer-copy {
+      color: #64788c;
+
+      font-size: 11px;
+    }
+
+
+    /* =========================================================
+       FLOATING WHATSAPP
+    ========================================================= */
+
+    .whatsapp {
+      position: fixed;
+
+      right: 18px;
+      bottom: 18px;
+
+      z-index: 1500;
+
+      width: 58px;
+      height: 58px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 50%;
+
+      background: var(--green);
+
+      color: white;
+
+      font-size: 24px;
+
+      box-shadow:
+        0 14px 35px
+        rgba(0,0,0,.3);
+
+      transition:
+        transform .2s ease;
+    }
+
+    .whatsapp:hover {
+      transform:
+        translateY(-4px)
+        scale(1.03);
+    }
+
+
+    /* =========================================================
+       MOBILE
+    ========================================================= */
+
+    @media (max-width: 950px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero-grid,
+      .why-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-visual {
+        max-width: 680px;
+
+        margin-inline: auto;
+      }
+
+      .browser {
+        transform: none;
+      }
+
+      .floating-stat {
+        left: 10px;
+      }
+
+      .services-grid,
+      .portfolio-grid,
+      .pricing-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .process {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .why-panel {
+        max-width: 600px;
+
+        width: 100%;
+
+        margin-inline: auto;
+      }
+    }
+
+
+    @media (max-width: 650px) {
+
+      .container {
+        width:
+          min(
+            calc(100% - 28px),
+            var(--container)
+          );
+      }
+
+      .nav {
+        min-height: 68px;
+      }
+
+      .nav-cta {
+        padding:
+          0 12px;
+
+        font-size: 11px;
+      }
+
+      .brand-text {
+        font-size: 15px;
+      }
+
+      .brand-mark {
+        width: 38px;
+        height: 38px;
+      }
+
+      .hero {
+        padding:
+          65px 0
+          50px;
+      }
+
+      .hero h1 {
+        font-size:
+          clamp(42px, 13vw, 61px);
+
+        letter-spacing: -2.6px;
+      }
+
+      .hero-description {
+        font-size: 16px;
+      }
+
+      .section {
+        padding: 74px 0;
+      }
+
+      .section-heading h2 {
+        letter-spacing: -1px;
+      }
+
+      .services-grid,
+      .portfolio-grid,
+      .pricing-grid,
+      .process {
+        grid-template-columns: 1fr;
+      }
+
+      .browser-screen {
+        min-height: 355px;
+      }
+
+      .mock-cards {
+        grid-template-columns: 1fr;
+
+        padding-bottom: 20px;
+      }
+
+      .mock-card:nth-child(n+2) {
+        display: none;
+      }
+
+      .why-panel {
+        min-height: 340px;
+      }
+
+      .why-point.one {
+        left: 15px;
+        top: 35px;
+      }
+
+      .why-point.two {
+        right: 12px;
+        top: 42px;
+      }
+
+      .why-point.three {
+        left: 20px;
+        bottom: 35px;
+      }
+
+      .why-point.four {
+        right: 15px;
+        bottom: 30px;
+      }
+
+      .cta-box {
+        padding:
+          52px
+          20px;
+      }
+
+      .cta-box h2 {
+        letter-spacing: -1.2px;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+
+        text-align: center;
+      }
+
+      .whatsapp {
+        right: 15px;
+        bottom: 15px;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <!-- =======================================================
+       HEADER
+  ======================================================== -->
+
+  <header class="header">
+
+    <div class="container">
+
+      <nav class="nav">
+
+        <a href="#" class="brand">
+
+          <div class="brand-mark">
+            J27
+          </div>
+
+          <div class="brand-text">
+            JIDAN<span>KHOIR27</span>
+          </div>
+
+        </a>
+
+
+        <div class="nav-links">
+
+          <a href="#layanan">
+            Layanan
+          </a>
+
+          <a href="#portofolio">
+            Portofolio
+          </a>
+
+          <a href="#proses">
+            Proses
+          </a>
+
+          <a href="#harga">
+            Harga
+          </a>
+
+          <a href="#faq">
+            FAQ
+          </a>
+
+        </div>
+
+
+        <a
+          class="nav-cta"
+          href="https://wa.me/6283842259721?text=Halo%20JIDANKHOIR27%2C%20saya%20tertarik%20dengan%20jasa%20landing%20page."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Konsultasi
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section class="hero">
+
+      <div class="container">
+
+        <div class="hero-grid">
+
+
+          <div>
+
+            <div class="eyebrow">
+
+              <span class="eyebrow-dot"></span>
+
+              JASA LANDING PAGE PROFESIONAL
+
+            </div>
+
+
+            <h1>
+
+              Bikin bisnis kamu
+
+              <span>
+                terlihat lebih profesional.
+              </span>
+
+            </h1>
+
+
+            <p class="hero-description">
+
+              JIDANKHOIR27 membantu UMKM,
+              bisnis online, produk, jasa,
+              affiliate, dan personal brand
+              memiliki landing page modern
+              yang dirancang untuk memperkenalkan
+              bisnis dan mengarahkan pengunjung
+              menuju tindakan.
+
+            </p>
+
+
+            <div class="hero-actions">
+
+              <a
+                class="btn btn-primary"
+                href="https://wa.me/6283842259721?text=Halo%20JIDANKHOIR27%2C%20saya%20ingin%20membuat%20landing%20page."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                💬 Mulai Konsultasi
+              </a>
+
+
+              <a
+                class="btn btn-outline"
+                href="#portofolio"
+              >
+                Lihat Portofolio
+              </a>
+
+            </div>
+
+
+            <div class="trust-row">
+
+              <div class="trust-item">
+                <span class="trust-check">✓</span>
+                Mobile Friendly
+              </div>
+
+              <div class="trust-item">
+                <span class="trust-check">✓</span>
+                Desain Modern
+              </div>
+
+              <div class="trust-item">
+                <span class="trust-check">✓</span>
+                Siap Online
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- HERO VISUAL -->
+
+          <div class="hero-visual">
+
+            <div class="browser">
+
+              <div class="browser-top">
+
+                <span class="browser-dot"></span>
+                <span class="browser-dot"></span>
+                <span class="browser-dot"></span>
+
+                <div class="browser-url">
+                  jidankhoir27.pages.example
+                </div>
+
+              </div>
+
+
+              <div class="browser-screen">
+
+                <div class="mock-nav">
+
+                  <div class="mock-logo"></div>
+
+                  <div class="mock-links">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                  </div>
+
+                </div>
+
+
+                <div class="mock-hero">
+
+                  <div class="mock-small"></div>
+
+                  <div class="mock-title"></div>
+
+                  <div class="mock-title short"></div>
+
+                  <div class="mock-description"></div>
+
+                  <div class="mock-description"></div>
+
+                  <div class="mock-button"></div>
+
+                </div>
+
+
+                <div class="mock-cards">
+
+                  <div class="mock-card"></div>
+                  <div class="mock-card"></div>
+                  <div class="mock-card"></div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="floating-stat">
+
+              <strong>
+                100% Mobile
+              </strong>
+
+              <span>
+                Dirancang nyaman untuk HP
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SERVICES
+    ====================================================== -->
+
+    <section
+      class="section"
+      id="layanan"
+    >
+
+      <div class="container">
+
+
+        <div class="section-heading center">
+
+          <div class="section-label">
+            Layanan
+          </div>
+
+          <h2>
+            Landing page untuk berbagai kebutuhan.
+          </h2>
+
+          <p>
+            Dari usaha kecil sampai personal brand,
+            setiap halaman dibuat dengan struktur
+            yang jelas dan fokus pada tujuan bisnis.
+          </p>
+
+        </div>
+
+
+        <div class="services-grid">
+
+
+          <article class="service-card">
+
+            <div class="service-icon">
+              🏪
+            </div>
+
+            <h3>
+              Landing Page UMKM
+            </h3>
+
+            <p>
+              Cocok untuk kuliner, laundry,
+              barbershop, bengkel, toko,
+              dan bisnis lokal lainnya.
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <div class="service-icon">
+              🛍️
+            </div>
+
+            <h3>
+              Produk & Online Shop
+            </h3>
+
+            <p>
+              Tampilkan produk, informasi,
+              keunggulan, harga, dan tombol
+              pembelian dalam satu halaman.
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <div class="service-icon">
+              🔥
+            </div>
+
+            <h3>
+              Affiliate Landing Page
+            </h3>
+
+            <p>
+              Halaman promosi untuk membantu
+              pengunjung memahami penawaran
+              sebelum diarahkan ke link produk.
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <div class="service-icon">
+              👤
+            </div>
+
+            <h3>
+              Personal Brand
+            </h3>
+
+            <p>
+              Bangun identitas profesional
+              dengan profil, portofolio,
+              sosial media, dan kontak.
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <div class="service-icon">
+              📲
+            </div>
+
+            <h3>
+              Landing Page WhatsApp
+            </h3>
+
+            <p>
+              Arahkan calon pelanggan
+              langsung ke WhatsApp dengan
+              tombol CTA yang jelas.
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <div class="service-icon">
+              🚀
+            </div>
+
+            <h3>
+              Publikasi Online
+            </h3>
+
+            <p>
+              Website dapat dipublikasikan
+              sehingga mudah dibagikan melalui
+              link ke pelanggan.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PORTFOLIO
+    ====================================================== -->
+
+    <section
+      class="section"
+      id="portofolio"
+    >
+
+      <div class="container">
+
+
+        <div class="section-heading">
+
+          <div class="section-label">
+            Portofolio
+          </div>
+
+          <h2>
+            Satu landing page,
+            satu tujuan yang jelas.
+          </h2>
+
+          <p>
+            Berikut contoh konsep desain yang
+            dapat dibuat untuk berbagai jenis bisnis.
+            Semuanya dapat disesuaikan dengan brand
+            dan kebutuhan pelanggan.
+          </p>
+
+        </div>
+
+
+        <div class="portfolio-grid">
+
+
+          <article class="portfolio-card">
+
+            <div class="portfolio-content">
+
+              <div class="portfolio-tag">
+                UMKM
+              </div>
+
+              <h3>
+                Kedai Kuliner
+              </h3>
+
+              <p>
+                Menu, promo, keunggulan,
+                lokasi, dan tombol pesan.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="portfolio-card">
+
+            <div class="portfolio-content">
+
+              <div class="portfolio-tag">
+                BUSINESS
+              </div>
+
+              <h3>
+                Barbershop
+              </h3>
+
+              <p>
+                Profil layanan, harga,
+                galeri, dan reservasi.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="portfolio-card">
+
+            <div class="portfolio-content">
+
+              <div class="portfolio-tag">
+                AFFILIATE
+              </div>
+
+              <h3>
+                Product Campaign
+              </h3>
+
+              <p>
+                Hook, manfaat produk,
+                penawaran, dan CTA pembelian.
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PROCESS
+    ====================================================== -->
+
+    <section
+      class="section"
+      id="proses"
+    >
+
+      <div class="container">
+
+
+        <div class="section-heading center">
+
+          <div class="section-label">
+            Proses Kerja
+          </div>
+
+          <h2>
+            Sederhana dari awal sampai online.
+          </h2>
+
+          <p>
+            Kamu tidak perlu memahami coding.
+            Cukup kirim kebutuhan bisnis,
+            kemudian proses dikerjakan dari sana.
+          </p>
+
+        </div>
+
+
+        <div class="process">
+
+
+          <article class="process-card">
+
+            <div class="process-number">
+              01
+            </div>
+
+            <h3>
+              Konsultasi
+            </h3>
+
+            <p>
+              Tentukan kebutuhan,
+              tujuan halaman, dan informasi
+              yang ingin ditampilkan.
+            </p>
+
+          </article>
+
+
+          <article class="process-card">
+
+            <div class="process-number">
+              02
+            </div>
+
+            <h3>
+              Konsep
+            </h3>
+
+            <p>
+              Struktur halaman dan arah desain
+              disusun berdasarkan bisnis
+              dan target pelanggan.
+            </p>
+
+          </article>
+
+
+          <article class="process-card">
+
+            <div class="process-number">
+              03
+            </div>
+
+            <h3>
+              Pengerjaan
+            </h3>
+
+            <p>
+              Landing page dibuat
+              responsive dan disesuaikan
+              dengan materi yang diberikan.
+            </p>
+
+          </article>
+
+
+          <article class="process-card">
+
+            <div class="process-number">
+              04
+            </div>
+
+            <h3>
+              Online
+            </h3>
+
+            <p>
+              Setelah selesai, halaman
+              dapat dipublikasikan dan
+              dibagikan kepada pelanggan.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PRICING
+    ====================================================== -->
+
+    <section
+      class="section"
+      id="harga"
+    >
+
+      <div class="container">
+
+
+        <div class="section-heading center">
+
+          <div class="section-label">
+            Paket Harga
+          </div>
+
+          <h2>
+            Pilih sesuai kebutuhan bisnis.
+          </h2>
+
+          <p>
+            Harga di bawah adalah paket awal
+            JIDANKHOIR27 dan dapat disesuaikan
+            berdasarkan kebutuhan proyek.
+          </p>
+
+        </div>
+
+
+        <div class="pricing-grid">
+
+
+          <!-- BASIC -->
+
+          <article class="price-card">
+
+            <h3>
+              Basic
+            </h3>
+
+            <div class="price-card-description">
+
+              Cocok untuk bisnis kecil
+              yang membutuhkan halaman
+              promosi sederhana.
+
+            </div>
+
+            <div class="price">
+              Rp75K
+              <span>
+                / project
+              </span>
+            </div>
+
+            <ul class="features">
+
+              <li>
+                1 halaman landing page
+              </li>
+
+              <li>
+                Responsive untuk HP
+              </li>
+
+              <li>
+                Informasi bisnis
+              </li>
+
+              <li>
+                Tombol WhatsApp
+              </li>
+
+              <li>
+                1x revisi
+              </li>
+
+            </ul>
+
+            <a
+              class="btn btn-outline"
+              href="https://wa.me/6283842259721?text=Halo%20JIDANKHOIR27%2C%20saya%20tertarik%20dengan%20paket%20Basic."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Pilih Basic
+            </a>
+
+          </article>
+
+
+          <!-- STANDARD -->
+
+          <article class="price-card featured">
+
+            <div class="popular">
+              PALING POPULER
+            </div>
+
+            <h3>
+              Standard
+            </h3>
+
+            <div class="price-card-description">
+
+              Untuk bisnis yang ingin
+              tampil lebih profesional
+              dan lebih lengkap.
+
+            </div>
+
+            <div class="price">
+              Rp175K
+              <span>
+                / project
+              </span>
+            </div>
+
+            <ul class="features">
+
+              <li>
+                Landing page profesional
+              </li>
+
+              <li>
+                Desain premium
+              </li>
+
+              <li>
+                Section produk / jasa
+              </li>
+
+              <li>
+                CTA WhatsApp
+              </li>
+
+              <li>
+                Animasi ringan
+              </li>
+
+              <li>
+                2x revisi
+              </li>
+
+            </ul>
+
+            <a
+              class="btn btn-primary"
+              href="https://wa.me/6283842259721?text=Halo%20JIDANKHOIR27%2C%20saya%20tertarik%20dengan%20paket%20Standard."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Pilih Standard
+            </a>
+
+          </article>
+
+
+          <!-- PREMIUM -->
+
+          <article class="price-card">
+
+            <h3>
+              Premium
+            </h3>
+
+            <div class="price-card-description">
+
+              Untuk brand yang membutuhkan
+              landing page custom dengan
+              presentasi lebih lengkap.
+
+            </div>
+
+            <div class="price">
+              Rp350K
+              <span>
+                / project
+              </span>
+            </div>
+
+            <ul class="features">
+
+              <li>
+                Landing page custom
+              </li>
+
+              <li>
+                Desain premium
+              </li>
+
+              <li>
+                Section lengkap
+              </li>
+
+              <li>
+                Animasi & interaksi
+              </li>
+
+              <li>
+                Optimasi mobile
+              </li>
+
+              <li>
+                3x revisi
+              </li>
+
+            </ul>
+
+            <a
+              class="btn btn-outline"
+              href="https://wa.me/6283842259721?text=Halo%20JIDANKHOIR27%2C%20saya%20tertarik%20dengan%20paket%20Premium."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Pilih Premium
+            </a>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         WHY JIDANKHOIR27
+    ====================================================== -->
+
+    <section class="section">
+
+      <div class="container">
+
+        <div class="why-grid">
+
+
+          <div class="why-panel">
+
+            <div class="why-center">
+
+              <div>
+
+                <strong>
+                  J27
+                </strong>
+
+                <span>
+                  Digital Service
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <div class="why-point one">
+
+              <strong>
+                Mobile
+              </strong>
+
+              <span>
+                First Design
+              </span>
+
+            </div>
+
+
+            <div class="why-point two">
+
+              <strong>
+                Modern
+              </strong>
+
+              <span>
+                Visual Style
+              </span>
+
+            </div>
+
+
+            <div class="why-point three">
+
+              <strong>
+                CTA
+              </strong>
+
+              <span>
+                Jelas
+              </span>
+
+            </div>
+
+
+            <div class="why-point four">
+
+              <strong>
+                Online
+              </strong>
+
+              <span>
+                Siap Dibagikan
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div>
+
+            <div class="section-heading">
+
+              <div class="section-label">
+                Kenapa JIDANKHOIR27?
+              </div>
+
+              <h2>
+                Bukan hanya cantik.
+                Harus punya tujuan.
+              </h2>
+
+              <p>
+                Landing page yang baik bukan hanya
+                terlihat menarik. Informasi harus
+                mudah dipahami dan pengunjung harus
+                tahu apa yang harus dilakukan berikutnya.
+              </p>
+
+            </div>
+
+
+            <div class="why-list">
+
+
+              <article class="why-item">
+
+                <div class="why-icon">
+                  📱
+                </div>
+
+                <div>
+
+                  <h3>
+                    Dirancang untuk pengguna HP
+                  </h3>
+
+                  <p>
+                    Struktur responsive agar
+                    nyaman digunakan pada perangkat
+                    mobile.
+                  </p>
+
+                </div>
+
+              </article>
+
+
+              <article class="why-item">
+
+                <div class="why-icon">
+                  🎯
+                </div>
+
+                <div>
+
+                  <h3>
+                    Fokus pada tujuan bisnis
+                  </h3>
+
+                  <p>
+                    CTA dan informasi disusun
+                    agar pengunjung lebih mudah
+                    mengambil tindakan.
+                  </p>
+
+                </div>
+
+              </article>
+
+
+              <article class="why-item">
+
+                <div class="why-icon">
+                  ⚡
+                </div>
+
+                <div>
+
+                  <h3>
+                    Struktur ringan
+                  </h3>
+
+                  <p>
+                    Dibangun dengan HTML dan CSS
+                    sederhana agar mudah dikelola
+                    dan dipublikasikan.
+                  </p>
+
+                </div>
+
+              </article>
+
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FAQ
+    ====================================================== -->
+
+    <section
+      class="section"
+      id="faq"
+    >
+
+      <div class="container">
+
+
+        <div class="section-heading center">
+
+          <div class="section-label">
+            FAQ
+          </div>
+
+          <h2>
+            Pertanyaan yang sering ditanyakan.
+          </h2>
+
+        </div>
+
+
+        <div class="faq-wrap">
+
+
+          <details>
+
+            <summary>
+              Apa itu landing page?
+            </summary>
+
+            <p>
+              Landing page adalah halaman website
+              yang dibuat dengan tujuan tertentu,
+              misalnya memperkenalkan bisnis,
+              mempromosikan produk, atau mengarahkan
+              calon pelanggan ke WhatsApp.
+            </p>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              Apakah landing page bisa dibuka dari HP?
+            </summary>
+
+            <p>
+              Ya. Landing page JIDANKHOIR27 dibuat
+              responsive sehingga tampilan menyesuaikan
+              ukuran layar perangkat.
+            </p>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              Apakah bisa dipasang tombol WhatsApp?
+            </summary>
+
+            <p>
+              Bisa. Tombol dapat diarahkan langsung
+              ke nomor WhatsApp yang ditentukan
+              pemilik bisnis.
+            </p>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              Apakah bisa memakai domain sendiri?
+            </summary>
+
+            <p>
+              Bisa. Landing page dapat dipublikasikan
+              melalui layanan hosting yang mendukung
+              file website statis, kemudian dapat
+              menggunakan domain sendiri sesuai
+              konfigurasi hosting.
+            </p>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              Apa yang perlu saya siapkan?
+            </summary>
+
+            <p>
+              Biasanya cukup menyiapkan nama bisnis,
+              logo jika ada, foto produk atau layanan,
+              informasi harga, deskripsi usaha,
+              kontak, dan link yang ingin digunakan.
+            </p>
+
+          </details>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CTA
+    ====================================================== -->
+
+    <section
+      class="cta-section"
+    >
+
+      <div class="container">
+
+        <div class="cta-box">
+
+          <h2>
+            Sudah siap membuat bisnis kamu
+            tampil lebih profesional?
+          </h2>
+
+          <p>
+            Ceritakan bisnis kamu.
+            JIDANKHOIR27 akan membantu menentukan
+            konsep landing page yang sesuai.
+          </p>
+
+          <a
+            class="btn btn-primary"
+            href="https://wa.me/6283842259721?text=Halo%20JIDANKHOIR27%2C%20saya%20ingin%20konsultasi%20untuk%20membuat%20landing%20page."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            💬 Konsultasi Sekarang
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- =======================================================
+       FOOTER
+  ======================================================== -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-inner">
+
+        <div class="footer-brand">
+          JIDAN<span>KHOIR27</span>
+        </div>
+
+        <div class="footer-copy">
+          © 2026 JIDANKHOIR27. Jasa Landing Page Profesional.
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =======================================================
+       FLOATING WHATSAPP
+  ======================================================== -->
+
+  <a
+    class="whatsapp"
+    href="https://wa.me/6283842259721?text=Halo%20JIDANKHOIR27%2C%20saya%20tertarik%20dengan%20jasa%20landing%20page."
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Hubungi JIDANKHOIR27 melalui WhatsApp"
+  >
+    ☎
+  </a>
+
+
+</body>
+</html>
