@@ -1,1 +1,0 @@
-# JIDANKHOIR27-
